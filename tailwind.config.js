@@ -14,17 +14,9 @@ module.exports = {
         darkBlue: 'hsl(213, 19%, 18%)',
         veryDarkBlue: 'hsl(216, 12%, 8%)',
         orange: 'hsl(25, 97%, 53%)',
-        from: {
+        from: 'hsl(212, 18%, 14%)',
+          to: 'hsl(220, 16%, 11%)',
 
-          50: 'hsl(212, 18%, 14%)',
-
-        },
-
-        to: {
-
-          50: "hsl(220, 16%, 11%)",
-
-        }
       },
       fontFamily:{
         overPass: ['Overpass', 'sans-serif'],
