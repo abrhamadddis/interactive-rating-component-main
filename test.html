@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rating Feature</title>
+  <style>
+    .rating-numbers {
+      display: flex;
+      justify-content: center;
+    }
+
+    .rating-numbers label {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid #ccc;
+      cursor: pointer;
+      margin: 0 5px;
+      font-size: 16px;
+    }
+
+    .rating-numbers input[type="radio"] {
+      display: none;
+    }
+
+    .rating-numbers input[type="radio"]:checked + label {
+      background-color: #ffbf00;
+      color: #fff;
+    }
+
+    .submit-button {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Rate from 1 to 5:</h2>
+  <form action="/submit-rating" method="post">
+    <div class="rating-numbers">
+      <input type="radio" name="rating" id="rating1" value="1">
+      <label for="rating1">1</label>
+      
+      <input type="radio" name="rating" id="rating2" value="2">
+      <label for="rating2">2</label>
+      
+      <input type="radio" name="rating" id="rating3" value="3">
+      <label for="rating3">3</label>
+      
+      <input type="radio" name="rating" id="rating4" value="4">
+      <label for="rating4">4</label>
+      
+      <input type="radio" name="rating" id="rating5" value="5">
+      <label for="rating5">5</label>
+    </div>
+    
+    <button class="submit-button" type="submit">Submit</button>
+  </form>
+</body>
+</html>
